@@ -24,8 +24,8 @@ export default function Home() {
             Poojan va Adhyayan kare saralta se
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            <a href={`/${url}/poojan`}><button type="submit" style={{ margin: "10px" }} className="button-cool sm-w-full">Poojan</button></a>
-            <a href={`/${url}/adhyayan`}><button type="submit" style={{ margin: "10px" }} className="button-cool sm-w-full">Adhyayan</button></a>
+            <a style={{ margin: "10px" }} href={`/${url}/poojan`}><button type="submit" className="button-cool sm-w-full">Poojan</button></a>
+            <a style={{ margin: "10px" }} href={`/${url}/adhyayan`}><button type="submit" className="button-cool sm-w-full">Adhyayan</button></a>
           </div>
         </main>
         <div className="bg-white" style={{ padding: "50px 0" }}>
