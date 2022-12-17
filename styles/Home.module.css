@@ -10,20 +10,29 @@
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  margin: 10px 0;
+  font-size: 35px;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+@media (min-width:500px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
 }
 
 .title,
 .description {
   text-align: center;
-}
-
-.description {
-  margin-top: 4rem;
-  line-height: 1.5;
-  font-size: 1.5rem;
 }
 
 .grid {
@@ -73,17 +82,5 @@
   .grid {
     width: 100%;
     flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
   }
 }

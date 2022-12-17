@@ -575,7 +575,7 @@ nav {
   top: 0;
   z-index: 1000;
   min-height: var(--navbar-height);
-  background-color: transparent;
+  background-color: white;
   width: 100%;
   transition: 200ms ease-in-out background-color, 200ms ease-in-out box-shadow;
 }
@@ -1283,15 +1283,4 @@ nav {
 
 .next-error-h1 {
   border-right: 1px solid rgba(0, 0, 0, .3);
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #fff;
-    background: #000;
-  }
-
-  .next-error-h1 {
-    border-right: 1px solid rgba(255, 255, 255, .3);
-  }
 }
