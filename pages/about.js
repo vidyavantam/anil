@@ -1,7 +1,7 @@
 import { url } from "./components/Data"
 
 const About = () => {
-  return (<div style={{ padding: "40px" }}>
+  return (<div className="section">
     <h1 style={{ textAlign: "center" }}>Hamse mile</h1>
     <div className='container mt-2'>
       <div>
