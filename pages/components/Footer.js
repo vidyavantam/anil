@@ -1,11 +1,15 @@
 import Four04 from "../404"
-import { url } from "./Data"
+import { url, AdhyayanData, PoojanData } from './Data'
 
-export default function Data(){
-  return(<Four04 />)
+export default function Data() {
+  return (<Four04 />)
 }
 
 export const Footer = () => {
+  let poojan = PoojanData
+  let tatt = poojan.slice(0, 3)
+  let adhy = AdhyayanData
+  let adh = adhy.slice(0, 3)
   return (<footer className="footer">
     <div className="container py-5">
       <div className="row">
@@ -20,15 +24,19 @@ export const Footer = () => {
         <div className="footer-col">
           <h4>Poojan Paddhati</h4>
           <ul>
-            <li><a href={`/${url}/batches/class-11-batch`}>Class 11th Batch</a></li>
-            <li><a href={`/${url}/batches/class-12-batch`}>Class 12th Batch</a></li>
+            {tatt.map((val) => {
+              return <li><a href={`/${url}/poojan/${val.id}`}>{val.name}</a></li>
+            })}
+            {PoojanData.length > 4 ? <li><a href={`/${url}/poojan`}>More...</a></li> : ""}
           </ul>
         </div>
         <div className="footer-col">
           <h4>Adhyayan</h4>
           <ul>
-            <li><a href={`/${url}/study-material/english-medium-ncert-books`}>English NCERT Books</a></li>
-            <li><a href={`/${url}/study-material/हिंदी-माध्यम-एन.सी.ई.आर.टी.-पुस्तकें`}>Hindi NCERT Books</a></li>
+            {adh.map((val) => {
+              return <li><a href={`/${url}/adhyayan/${val.id}`}>{val.name}</a></li>
+            })}
+            {AdhyayanData.length > 4 ? <li><a href={`/${url}/adhyayan`}>More...</a></li> : ""}
           </ul>
         </div>
         <div className="footer-col">

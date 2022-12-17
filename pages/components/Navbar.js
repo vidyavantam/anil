@@ -32,7 +32,7 @@ export const Navbar = () => {
                 {tatt.map((val) => {
                   return <a className="normal" href={`/${url}/poojan/${val.id}`} style={{ display: 'flex', alignItems: 'center' }}>{val.name}</a>
                 })}
-                {PoojanData.length > 10 ? <a href={`/${url}/poojan`} style={{ display: 'flex', color: "inherit", alignItems: 'center', textAlign: "end" }}>Aadi</a> : ""}
+                {PoojanData.length > 10 ? <a href={`/${url}/poojan`} style={{ display: 'flex', color: "inherit", alignItems: 'center', textAlign: "end" }}>More...</a> : ""}
               </div>
             </div>
             <div className="dropdown dropdown-hide">
@@ -45,7 +45,7 @@ export const Navbar = () => {
                 {adh.map((val) => {
                   return <a className="normal" href={`/${url}/adhyayan/${val.id}`} style={{ display: 'flex', alignItems: 'center' }}>{val.name}</a>
                 })}
-                {AdhyayanData.length > 10 ? <a href={`/${url}/adhyayan`} style={{ display: 'flex', color: "inherit", alignItems: 'center', textAlign: "end" }}>Aadi</a> : ""}
+                {AdhyayanData.length > 10 ? <a href={`/${url}/adhyayan`} style={{ display: 'flex', color: "inherit", alignItems: 'center', textAlign: "end" }}>More...</a> : ""}
               </div>
             </div>
             <a className="navbar-link" href={`/${url}/contact`}>Contact</a>
