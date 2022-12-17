@@ -17,7 +17,7 @@ export const Pooja = () => {
         {data.map((val) => {
           return <a href={`/${url}/poojan/${val.id}`} className={styles.card}>
             <div style={{ margin: "10px 0" }}>
-              <img src="/yajna.png" style={{width:"80%", height:"80%"}} />
+              <img src={`/${url}/yajna.png`} style={{width:"80%", height:"80%"}} />
             </div>
             <h2>{val.name}</h2>
           </a>
@@ -37,7 +37,7 @@ export const Adhyayan = () => {
         {data.map((val) => {
           return <a href={`/${url}/adhyayan/${val.id}`} className={styles.card}>
             <div style={{ margin: "10px 0" }}>
-              <img src="/book.svg" style={{width:"80%", height:"80%"}} />
+              <img src={`/${url}/book.svg`} style={{width:"80%", height:"80%"}} />
             </div>
             <h2>{val.name}</h2>
           </a>

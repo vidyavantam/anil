@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import Four04 from "../404"
-import { AdhyayanData, PoojanData } from '../components/Data'
+import { AdhyayanData, PoojanData, url } from '../components/Data'
 import styles from '../../styles/Home.module.css'
 
 export function AdhyayanID() {
@@ -50,7 +50,7 @@ export function AdhyayanID() {
           <div className="lg:col-30" style={{ margin: '20px 0 20px 0' }}>
             <div className={styles.card} style={{ maxWidth: "100%", height: "max-content" }}>
               <div style={{ margin: "10px 0" }}>
-                <img src="/yajna.png" style={{ width: "95%", height: "95%" }} />
+                <img src={`/${url}/yajna.png`} style={{ width: "95%", height: "95%" }} />
               </div>
               <h2>{da[0].name}</h2>
             </div>
@@ -109,7 +109,7 @@ export function PoojanID() {
           <div className="lg:col-30" style={{ margin: '20px 0 20px 0' }}>
             <div className={styles.card} style={{ maxWidth: "100%", height: "max-content" }}>
               <div style={{ margin: "10px 0" }}>
-                <img src="/yajna.png" style={{ width: "95%", height: "95%" }} />
+                <img src={`/${url}/yajna.png`} style={{ width: "95%", height: "95%" }} />
               </div>
               <h2>{da[0].name}</h2>
             </div>

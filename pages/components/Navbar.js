@@ -12,7 +12,7 @@ export const Navbar = () => {
   let adhy = AdhyayanData
   let adh = adhy.slice(0, 10)
   return (<>
-    <Script src="/script.js"></Script>
+    <Script src={`/${url}/script.js`}></Script>
     <nav>
       <div className="navbar">
         <a style={{ textAlign: 'center' }} className="logo" href={`/${url}/`}><p style={{ fontSize: 30 }}>Karmakaand</p>
