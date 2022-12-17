@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from '../../styles/Home.module.css'
 import Four04 from "../404"
 import { AdhyayanData, PoojanData } from "./Data"
@@ -18,7 +17,7 @@ export const Pooja = () => {
         {data.map((val) => {
           return <a href={`/poojan/${val.id}`} className={styles.card}>
             <div style={{ margin: "10px 0" }}>
-              <Image src="/yajna.png" width={100} height={100} />
+              <img src="/yajna.png" style={{width:"80%", height:"80%"}} />
             </div>
             <h2>{val.name}</h2>
           </a>
@@ -38,7 +37,7 @@ export const Adhyayan = () => {
         {data.map((val) => {
           return <a href={`/adhyayan/${val.id}`} className={styles.card}>
             <div style={{ margin: "10px 0" }}>
-              <Image src="/book.svg" width={100} height={100} />
+              <img src="/book.svg" style={{width:"80%", height:"80%"}} />
             </div>
             <h2>{val.name}</h2>
           </a>
