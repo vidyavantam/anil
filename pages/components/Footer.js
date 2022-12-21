@@ -14,29 +14,29 @@ export const Footer = () => {
     <div className="container py-5">
       <div className="row">
         <div className="footer-col">
-          <h4>Karmakaand</h4>
+          <h4>वैदिक कर्मकाण्ड</h4>
           <ul>
-            <li><a href={`/${url}/`}>Home</a></li>
-            <li><a href={`/${url}/about`}>About Us</a></li>
-            <li><a href={`/${url}/contact`}>Contact Us</a></li>
+            <li><a href={`/${url}/`}>गृह</a></li>
+            <li><a href={`/${url}/about`}>विषय में</a></li>
+            <li><a href={`/${url}/contact`}>सम्पर्क करें</a></li>
           </ul>
         </div>
         <div className="footer-col">
-          <h4>Poojan Paddhati</h4>
+          <h4>कर्मकाण्ड</h4>
           <ul>
             {tatt.map((val) => {
               return <li><a href={`/${url}/poojan/${val.id}`}>{val.name}</a></li>
             })}
-            {PoojanData.length > 4 ? <li><a href={`/${url}/poojan`}>More...</a></li> : ""}
+            {PoojanData.length > 4 ? <li><a href={`/${url}/poojan`}>अधिक...</a></li> : ""}
           </ul>
         </div>
         <div className="footer-col">
-          <h4>Adhyayan</h4>
+          <h4>अध्ययन</h4>
           <ul>
             {adh.map((val) => {
               return <li><a href={`/${url}/adhyayan/${val.id}`}>{val.name}</a></li>
             })}
-            {AdhyayanData.length > 4 ? <li><a href={`/${url}/adhyayan`}>More...</a></li> : ""}
+            {AdhyayanData.length > 4 ? <li><a href={`/${url}/adhyayan`}>अधिक...</a></li> : ""}
           </ul>
         </div>
         <div className="footer-col">
